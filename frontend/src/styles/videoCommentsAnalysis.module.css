@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  overflow: auto;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.videoList {
+  flex: 1;
+  max-width: 400px;
+}
+
+.commentsSection {
+  flex: 2;
+}
+
+.videoGrid {
+  display: grid;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.videoCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.videoCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.videoCard.selected {
+  border: 2px solid #4CAF50;
+  background-color: #f0fff4;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.videoInfo {
+  padding: 12px;
+}
+
+.videoInfo h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 15px 0;
+}
+
+.pagination button {
+  background: #f0f0f0;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.commentsContainer {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.commentsList {
+  list-style: none;
+  padding: 0;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.comment {
+  border-left: 4px solid #ddd;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  border-radius: 0 4px 4px 0;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.likes {
+  color: #666;
+  font-size: 14px;
+}
+
+.commentText {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.commentFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.loading, .noComments {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.error {
+  color: #d32f2f;
+  background: #ffebee;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .videoList {
+    max-width: 100%;
+  }
+}
+
+.refreshButton {
+  background-color: #f0f2f5;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.refreshButton:hover {
+  background-color: #e2e6ea;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.refreshButton:active {
+  transform: translateY(1px);
+}

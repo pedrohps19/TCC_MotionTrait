@@ -1,14 +1,14 @@
 import React from "react";
-import Alvo from '../assets/precisao.png'
+import Desempenho from '../assets/performance.png'
 
-export default function CardAcessivel() {
+export default function CardDesempenho() {
     
     const style = {
         cardInfo: {
             width: '260px',
             height: '420px',
-            margin: '0 5rem ',
             border: 'solid 4px blue',
+            margin: '0 5rem ',
             borderRadius: '10px',
             display: 'flex',
             flexDirection: 'column',
@@ -29,9 +29,10 @@ export default function CardAcessivel() {
     }
     return (
         <div style={style.cardInfo}>
-            <img src={Alvo} alt="" style={style.icon}/>
-            <h2 style={style.title}>PRECISÃO NOS DADOS</h2>
-            <p style={style.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias eos veritatis quaerat ullam iste excepturi reprehenderit fugit facilis rerum repudiandae quisquam</p>
+            <img src={Desempenho} alt="" style={style.icon}/>
+            <h2 style={style.title}>ANÁLISE DE DESEMPENHO</h2>
+            <p style={style.text}>Avalie a performance de suas campanhas, produtos ou serviços com insights profundos. Descubra o que funciona, o que precisa melhorar e otimize resultados com inteligência.
+            </p>
         </div>
     )
 }

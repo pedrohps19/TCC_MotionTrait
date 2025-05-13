@@ -1,0 +1,109 @@
+/* Container Principal */
+.container-inputs {
+    width: 350px;
+    height: 430px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+/* Containers dos Inputs */
+.inputs-container_sendEmail, .inputs-container_cod {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 30px 0px;
+}
+
+/* Inputs */
+.inputs-container_sendEmail input, .inputs-container_cod input {
+    width: 80%;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid blue;
+    padding: 5px;
+    font-size: 16px;
+    background: transparent;
+    z-index: 1;
+}
+
+/* Labels */
+.inputs-container_sendEmail label, .inputs-container_cod label {
+    position: absolute;
+    left: 10%;
+    bottom: 8px;
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Animação das Labels */
+.inputs-container_sendEmail input:focus ~ label,
+.inputs-container_cod input:focus ~ label,
+.inputs-container_sendEmail input:not(:placeholder-shown) ~ label,
+.inputs-container_cod input:not(:placeholder-shown) ~ label {
+    bottom: 40px;
+    left: 10%;
+    font-size: 12px;
+    color: blue;
+}
+
+/* Estilo para Inputs com Erro */
+.inputs-container_sendEmail.error input,
+.inputs-container_cod.error input {
+    border-bottom: 1px solid red;
+}
+
+/* Mensagens de Erro */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: left;
+    width: 80%;
+}
+
+/* Botões */
+.cdg-btn {
+    width: 120px;
+    height: 36px;
+    margin-top: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.cdg-btn:hover {
+    scale: 1.1;
+}
+
+.cdg2-btn {
+    width: 150px;
+    margin: 0px 0px 10px 0px;
+}
+
+.forgot-password-link {
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+.forgot-password-link:hover {
+    scale: 1.1;
+}
+
+.forgot-password-link a{
+    border-bottom: 1px solid blue;
+    text-decoration: none;
+    color: black;
+}
+

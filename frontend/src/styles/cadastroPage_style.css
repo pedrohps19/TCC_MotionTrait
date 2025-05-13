@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cadastro-container {
+    width: 380px;
+    height: 450px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px  solid #ccc;
+    border-radius: 6px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.inputs-container_name, .inputs-container_email, .inputs-container_channel, .inputs-container_pass {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 25px 0px;
+}
+
+.inputs-container_name input, .inputs-container_email input, .inputs-container_channel input, .inputs-container_pass input {
+    width: 80%;
+    height: 36px;
+    outline: none;
+    border: none;
+    
+    border-bottom: 1px solid blue;
+    padding: 5px;
+    font-size: 16px;
+    background: transparent;
+    z-index: 1;
+}
+
+.inputs-container_name label, .inputs-container_email label, .inputs-container_channel label, .inputs-container_pass label {
+    position: absolute;
+    left: 10%;
+    bottom: 10px;
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none; 
+}
+
+
+.inputs-container_name input:focus ~ label,
+.inputs-container_email input:focus ~ label,
+.inputs-container_channel input:focus ~ label,
+.inputs-container_pass input:focus ~ label,
+.inputs-container_name input:not(:placeholder-shown) ~ label,
+.inputs-container_email input:not(:placeholder-shown) ~ label,
+.inputs-container_channel input:not(:placeholder-shown) ~ label,
+.inputs-container_pass input:not(:placeholder-shown) ~ label {
+    bottom: 30px;
+    left: 10%;
+    font-size: 12px; 
+    color: blue; 
+}
+
+.btn-register {
+    width: 120px;
+    height: 36px;
+    margin-top: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.btn-register:hover {
+    scale: 1.1;
+}
+
+.msg-register {
+    margin-top: 15px;
+    font-weight: 400;
+    color: rgba(0, 128, 0, 0.829);
+}
+
+  
+
+.inputs-container_name.error input,
+.inputs-container_email.error input,
+.inputs-container_channel.error input,
+.inputs-container_pass.error input {
+    border-bottom: 1px solid red;
+}
+
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 38px;
+    text-align: left;
+    position: absolute;
+    width: 80%;
+}

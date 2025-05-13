@@ -1,0 +1,119 @@
+.videoListContainer {
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    padding-right: 5px;
+  }
+  
+.pagination button {
+  width: auto;
+  height: auto;
+  border: 1px  black solid;
+  background-color: transparent;
+  padding: 10px;
+  margin: 0px 10px;
+}
+  .videoGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .videoCard {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #eee;
+  }
+  
+  .videoCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .videoThumbnail {
+    width: 120px;
+    height: 68px;
+    min-width: 120px;
+    overflow: hidden;
+  }
+  
+  .videoThumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .videoInfo {
+    flex: 1;
+    padding: 10px 15px;
+    overflow: hidden;
+    min-width: 0;
+  }
+  
+  .videoInfo h4 {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+  }
+  
+  .videoStats {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+  
+  .videoStats span {
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+  
+  .videoDate {
+    font-size: 11px;
+    color: #999;
+    margin: 0;
+  }
+  
+  .noVideos {
+    padding: 30px 20px;
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px dashed #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .videoThumbnail {
+      width: 90px;
+      height: 60px;
+      min-width: 90px;
+    }
+    
+    .videoInfo h4 {
+      font-size: 13px;
+    }
+    
+    .videoStats {
+      gap: 8px;
+      font-size: 11px;
+    }
+    
+    .videoDate {
+      font-size: 10px;
+    }
+  }
+

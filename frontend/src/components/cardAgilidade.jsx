@@ -1,7 +1,7 @@
 import React from "react";
-import Desempenho from '../assets/performance.png'
+import Agilidade from '../assets/emocoes.png'
 
-export default function CardDesempenho() {
+export default function CardAgilidade() {
     
     const style = {
         cardInfo: {
@@ -17,7 +17,7 @@ export default function CardDesempenho() {
             textAlign: 'center'
         },
         icon: {
-            width: '60px',
+            width: '75px',
             margin: '15px'
         },
         title: {
@@ -29,9 +29,10 @@ export default function CardDesempenho() {
     }
     return (
         <div style={style.cardInfo}>
-            <img src={Desempenho} alt="" style={style.icon}/>
-            <h2 style={style.title}>ANÁLISE DE DESEMPENHO</h2>
-            <p style={style.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias eos veritatis quaerat ullam iste excepturi reprehenderit fugit facilis rerum repudiandae quisquam</p>
+            <img src={Agilidade} alt="" style={style.icon}/>
+            <h2 style={style.title}>ANÁLISE DE SENTIMENTO</h2>
+            <p style={style.text}>Identifique emoções e opiniões em tempo real. Saiba se seus clientes estão satisfeitos, insatisfeitos ou neutros e aja rapidamente para melhorar a experiência e fidelizar.
+            </p>
         </div>
     )
 }

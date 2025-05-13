@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-container {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px  solid #ccc;
+    border-radius: 6px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.inputs-container_user, .inputs-container_pass {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 30px 0px;
+}
+
+.inputs-container_user input, .inputs-container_pass input {
+    width: 80%;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid blue;
+    padding: 5px;
+    font-size: 16px;
+    background: transparent;
+    z-index: 1;
+}
+
+.inputs-container_user label, .inputs-container_pass label {
+    position: absolute;
+    left: 10%;
+    bottom: 8px;
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+
+.inputs-container_user input:focus ~ label,
+.inputs-container_pass input:focus ~ label,
+.inputs-container_user input:not(:placeholder-shown) ~ label,
+.inputs-container_pass input:not(:placeholder-shown) ~ label {
+    bottom: 40px; 
+    left: 10%;
+    font-size: 12px; 
+    color: blue; 
+}
+
+.message {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .message.error {
+    color: red;
+  }
+  
+  .message.success {
+    color: green;
+  }
+
+.inputs-container_user.error input,
+.inputs-container_pass.error input {
+  border-bottom: 1px solid red;
+}
+
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: left;
+  width: 80%;
+}
+
+.btn-entrar {
+    width: 120px;
+    height: 36px;
+    margin-top: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.btn-entrar:hover {
+    scale: 1.1;
+
+}
+

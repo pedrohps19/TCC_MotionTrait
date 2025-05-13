@@ -1,14 +1,14 @@
 import React from "react";
-import Agilidade from '../assets/emocoes.png'
+import Alvo from '../assets/precisao.png'
 
-export default function CardAgilidade() {
+export default function CardAcessivel() {
     
     const style = {
         cardInfo: {
             width: '260px',
             height: '420px',
-            border: 'solid 4px blue',
             margin: '0 5rem ',
+            border: 'solid 4px blue',
             borderRadius: '10px',
             display: 'flex',
             flexDirection: 'column',
@@ -17,7 +17,7 @@ export default function CardAgilidade() {
             textAlign: 'center'
         },
         icon: {
-            width: '75px',
+            width: '60px',
             margin: '15px'
         },
         title: {
@@ -29,9 +29,9 @@ export default function CardAgilidade() {
     }
     return (
         <div style={style.cardInfo}>
-            <img src={Agilidade} alt="" style={style.icon}/>
-            <h2 style={style.title}>ANÁLISE DE SENTIMENTO</h2>
-            <p style={style.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur alias eos veritatis quaerat ullam iste excepturi reprehenderit fugit facilis rerum repudiandae quisquam</p>
+            <img src={Alvo} alt="" style={style.icon}/>
+            <h2 style={style.title}>PRECISÃO NOS DADOS</h2>
+            <p style={style.text}>Conte com uma análise altamente precisa para entender seus clientes de forma confiável. Nosso sistema reduz erros e entrega informações claras e acionáveis, garantindo decisões baseadas em dados reais.</p>
         </div>
     )
 }
