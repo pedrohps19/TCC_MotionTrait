@@ -84,9 +84,9 @@ pip install Flask Flask-Cors Flask-Bcrypt Flask-SQLAlchemy python-dotenv PyJWT g
     DB_HOST='localhost'
     DB_NAME='site'
     SECRET_KEY=df86a1261c5edef896e119b1b8ab5a73e67eca3a40a56048b16f78b43bfda48b
-    YOUTUBE_API_KEY_1="AIzaSyAoalda7qQmAdIXkEJ2eG1JZ24BdzIZ62k"
-    YOUTUBE_API_KEY_2="AIzaSyABqdusE84qiTRZipx_IywpQBG_-NQwbuM"
-    YOUTUBE_API_KEY_3="AIzaSyD1gE2DAyps5wje-6YFlYxwoS2us-efo_w"
+    YOUTUBE_API_KEY_1=""
+    YOUTUBE_API_KEY_2=""
+    YOUTUBE_API_KEY_3=""
     EMAIL_USER="algum email seu"
     EMAIL_PASSWORD="senha do email"
 ```
